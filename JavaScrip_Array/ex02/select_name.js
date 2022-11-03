@@ -11,15 +11,14 @@
 /* ************************************************************************** */
 //3) Faça um programa que dado uma lista de nomes imprima os nomes que começem com a letra "V".
 
-const n = ['cu', 'isabela']
+const n = ["cu", "isabela", "victoria", "V", "Valdemir"]
 let i;
 let s;
 
-for (i = 0; i < n[n.length-1]; i++) 
+for (i = 0; i < n.length; i++) 
 {
-    
-    console.log (n[i])
-    
-  
-    
+    if (n[i][0] === 'v' || n[i][0] === 'V')
+    {
+        console.log (n[i])
+    }    
 }

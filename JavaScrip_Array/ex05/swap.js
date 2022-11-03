@@ -13,18 +13,17 @@
 // 6) Dado uma lista com as notas tiradas pelos alunos. imprima a maior nota.
 //Ex de lista de notas = [2, 7, 3, 8, 10, 4]
 
-const n = [2, 7, 3, 8, 10, 4]
+const n = [400, 2, 7, 3, 8, 4, 200]
 
 
-let swap
-let i
+let swap = 0;
+let i;
 
-for (let i = 0; i < n.length; i++) 
+for (i = 0; i < n.length; i++) 
 {
-    let n2 = n[i + 1]
-    if (n[i] < n2)
+    if (swap < n[i])
     {
-        swap = n2
+       swap = n[i]
     }
 }
 console.log(swap)
